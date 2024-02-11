@@ -4,49 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shafiq+Uzbek&display=swap">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('background-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh; /* Set the background image to cover the entire viewport height */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white; /* Text color on top of the background image */
+            font-family: 'Shafiq Uzbek', sans-serif; /* Apply Shafig Uzbek font */
         }
-        .content {
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+        .banner {
+            background-image: url('banner-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        a {
+        .banner-content {
             color: white;
-            text-decoration: none;
-            background-color: #333; /* Button background color */
-            padding: 10px 20px;
-            border-radius: 5px;
+            font-size: 2em;
         }
-        a:hover {
-            background-color: #555; /* Button background color on hover */
+        .blocks {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+        .block {
+            width: calc(25% - 20px);
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .block h2 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-    <div class="content">
+    <header>
         <h1>Welcome to My Website</h1>
-        <p>This is the homepage of my website. You can add more content here.</p>
-        <a href="#">Learn More</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h2>Banner Title</h2>
+            <p>This is the banner content. You can add more information here.</p>
+        </div>
+    </div>
+
+    <div class="blocks">
+        <div class="block">
+            <h2>Block 1</h2>
+            <p>This is the content of block 1.</p>
+        </div>
+        <div class="block">
+            <h2>Block 2</h2>
+            <p>This is the content of block 2.</p>
+        </div>
+        <div class="block">
+            <h2>Block 3</h2>
+            <p>This is the content of block 3.</p>
+        </div>
+        <div class="block">
+            <h2>Block 4</h2>
+            <p>This is the content of block 4.</p>
+        </div>
     </div>
 </body>
 </html>
