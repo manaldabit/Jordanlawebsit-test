@@ -31,15 +31,20 @@
             color: white;
             font-size: 2em;
         }
+        .container {
+            max-width: 1024px; /* Set maximum width for the content container */
+            margin: 0 auto; /* Center the content container horizontally */
+            padding: 0 20px; /* Add some padding to the container */
+        }
         .blocks {
             display: flex;
+            flex-wrap: wrap; /* Allow blocks to wrap to the next line on smaller screens */
             justify-content: space-around;
-            padding: 50px 0;
+            padding: 20px 0; /* Decreased padding for better mobile view */
         }
         .block {
-            width: calc(25% - 20px);
-            background-color: #f0f0f0;
-            padding: 20px;
+            width: calc(50% - 20px); /* Set block width to 50% of the container width with some spacing */
+            margin-bottom: 20px; /* Add some spacing between blocks */
             text-align: center;
         }
         .block h2 {
@@ -49,6 +54,12 @@
             max-width: 100%;
             height: auto;
             margin-bottom: 10px; /* Add some spacing between image and text */
+        }
+        /* Media query for screens smaller than 768px (e.g., smartphones) */
+        @media screen and (max-width: 768px) {
+            .block {
+                width: calc(100% - 20px); /* Set block width to 100% of the container width with some spacing */
+            }
         }
     </style>
 </head>
@@ -69,26 +80,28 @@
         </div>
     </div>
 
-    <div class="blocks">
-        <div class="block">
-            <img src="images/newjlateachrs.png" alt="Image 1">
-            <h2>تدريب معلمين</h2>
-            <p>This is the content of block 1.</p>
-        </div>
-        <div class="block">
-            <img src="images/businessfinancenew.jpg" alt="Image 2">
-            <h2>مالية واقتصاد </h2>
-            <p>This is the content of block 2.</p>
-        </div>
-        <div class="block">
-            <img src="image3.jpg" alt="Image 3">
-            <h2>Block 3</h2>
-            <p>This is the content of block 3.</p>
-        </div>
-        <div class="block">
-            <img src="image4.jpg" alt="Image 4">
-            <h2>Block 4</h2>
-            <p>This is the content of block 4.</p>
+    <div class="container">
+        <div class="blocks">
+            <div class="block">
+                <img src="images/newjlateachrs.png" alt="Image 1">
+                <h2>تدريب معلمين</h2>
+                <p>This is the content of block 1.</p>
+            </div>
+            <div class="block">
+                <img src="images/businessfinancenew.jpg" alt="Image 2">
+                <h2>مالية واقتصاد </h2>
+                <p>This is the content of block 2.</p>
+            </div>
+            <div class="block">
+                <img src="image3.jpg" alt="Image 3">
+                <h2>Block 3</h2>
+                <p>This is the content of block 3.</p>
+            </div>
+            <div class="block">
+                <img src="image4.jpg" alt="Image 4">
+                <h2>Block 4</h2>
+                <p>This is the content of block 4.</p>
+            </div>
         </div>
     </div>
 </body>
