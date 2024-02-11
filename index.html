@@ -1,100 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shafiq+Uzbek&display=swap">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Shafiq Uzbek', sans-serif; /* Apply Shafig Uzbek font */
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .banner {
-            background-image: url('new-mjLA-BANNER (1920 x 480 px).png');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .banner-content {
-            color: white;
-            font-size: 2em;
-        }
-        .blocks {
-            display: flex;
-            flex-wrap: wrap; /* Allow blocks to wrap to the next line on smaller screens */
-            justify-content: space-around;
-            padding: 20px 0; /* Decreased padding for better mobile view */
-        }
-        .block {
-            width: calc(50% - 20px); /* Set block width to 50% of the container width with some spacing */
-            margin-bottom: 20px; /* Add some spacing between blocks */
-            text-align: center;
-        }
-        .block h2 {
-            margin-top: 0;
-        }
-        .block img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px; /* Add some spacing between image and text */
-        }
-        @media screen and (max-width: 768px) {
-            .block {
-                width: calc(100% - 20px); /* Set block width to 100% of the container width with some spacing */
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shafiq Uzbek', sans-serif; /* Apply Shafig Uzbek font */
+}
 
-    <div class="banner">
-        <div class="banner-content">
-            <!-- Banner content goes here -->
-        </div>
-    </div>
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    <div class="blocks">
-        <div class="block">
-            <img src="images/newjlateachrs.png" alt="Image 1">
-            <h2>تدريب معلمين</h2>
-            <p>This is the content of block 1.</p>
-        </div>
-        <div class="block">
-            <img src="images/businessfinancenew.jpg" alt="Image 2">
-            <h2>مالية واقتصاد </h2>
-            <p>This is the content of block 2.</p>
-        </div>
-        <div class="block">
-            <img src="image3.jpg" alt="Image 3">
-            <h2>Block 3</h2>
-            <p>This is the content of block 3.</p>
-        </div>
-        <div class="block">
-            <img src="image4.jpg" alt="Image 4">
-            <h2>Block 4</h2>
-            <p>This is the content of block 4.</p>
-        </div>
-    </div>
-</body>
-</html>
+.banner {
+    background-image: url('new-mjLA-BANNER (1920 x 480 px).png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content {
+    color: white;
+    font-size: 2em;
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap; /* Allow blocks to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    padding: 20px 0; /* Decreased padding for better mobile view */
+}
+
+.block {
+    width: calc(50% - 20px); /* Set block width to 50% of the container width with some spacing */
+    margin-bottom: 20px; /* Add some spacing between blocks */
+    text-align: center;
+}
+
+.block h2 {
+    margin-top: 0;
+}
+
+.block img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add some spacing between image and text */
+}
+
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+    .block {
+        width: calc(100% - 20px); /* Set block width to 100% of the container width with some spacing */
+    }
+}
+
+/* Center content container on larger screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px; /* Set maximum width for the content container */
+        margin: 0 auto; /* Center the content container horizontally */
+    }
+}
